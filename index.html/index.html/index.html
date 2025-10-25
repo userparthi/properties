@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Properties Selling</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2e8b57;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .property-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .property-card:hover{
+             transform: scale(1.1);
+             transition-duration: 1s;
+             transition-delay: 0.1s;
+             
+        }
+
+        .property-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .details {
+            padding: 1rem;
+        }
+
+        .details h2 {
+            margin-top: 0;
+        }
+
+        button {
+            background-color: #2e8b57;
+            color: white;
+            border: none;
+            padding: 0.75rem;
+            margin-top: 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        /* 📱 Responsive Design */
+        @media (max-width: 1024px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+                padding: 1rem;
+            }
+
+            button {
+                font-size: 0.9rem;
+            }
+        }
+
+        .contact {
+            font-weight: bold;
+            text-align: center;
+            background-color: black;
+            color: #f4f4f4;
+        }
+
+        .all {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .head1 {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="head1">AVAILABLE PROPERTIES</h1>
+    </header>
+
+    <main class="grid-container">
+        <div class="property-card">
+            <img src="land-1.jpg" alt="Land 1" />
+            <div class="details">
+                <h2>BHEL CITY</h2>
+                <p>📍 "Thirumayam, Pudukottai,TamilNadu "</p>
+                <p>📐 "1.5-5 cent"</p>
+                <p>💰 "₹3-3.5 lakhs / cent"</p>
+            </div>
+        </div>
+
+        <div class="property-card">
+            <img src="land-2.jpg" alt="Land 2" />
+            <div class="details">
+                <h2> "SRI KRISHNA NAGAR"</h2>
+                <p>📍 "Chettinadu, Karaikudi ,TamilNadu"</p>
+                <p>📐 "2.5-5 cent"</p>
+                <p>💰 "₹3.5 lakhs / cent"</p>
+
+            </div>
+        </div>
+
+        <div class="property-card">
+            <img src="land-3.jpg" alt="Land 3" />
+            <div class="details">
+                <h2> "APJ NAGAR"</h2>
+                <p>📍 "Managiri, Karaikudi, TamilNadu"</p>
+                <p>📐 "1.70-5.5 cent"</p>
+                <p>💰"₹3.10-3.75 lakhs / cent"</p>
+
+            </div>
+        </div>
+
+        <div class="property-card">
+            <img src="land-4.jpg" alt="Land 4" />
+            <div class="details">
+                <h2>FARM LAND</h2>
+                <p>📍 "Kallal, Karaikudi, TamilNadu"</p>
+                <p>📐"30-87 cent"</p>
+                <p>💰 "₹40,000-50,000 / cent"</p>
+
+            </div>
+        </div>
+        <div class="property-card">
+            <img src="land-5.jpg" alt="Land 4" />
+            <div class="details">
+                <h2>"VS NAGAR"</h2>
+                <p>📍 "Thirumayam, Pudukottai,TamilNadu "</p>
+                <p>📐 "3-4.5 cent"</p>
+                <p>💰 "₹3.0 lakhs / cent"</p>
+
+            </div>
+        </div>
+        <div class="property-card">
+            <img src="land-6.jpg" alt="Land 4" />
+            <div class="details">
+                <h2> "GOKUL NAGAR"</h2>
+                <p>📍 "Kallal, Karaikudi,TamilNadu "</p>
+                <p>📐 "3-5 cent"</p>
+                <p>💰 "₹1.25 lakhs / cent"</p>
+
+            </div>
+        </div>
+    </main>
+    <h2 class="contact">Contact</h2>
+    <p class="all">Name : Parthibaraja M</p>
+    <p class="all">Contact Us : 9345651815</p>
+</body>
+
+</html>
